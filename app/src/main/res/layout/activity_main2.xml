@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hbacak07.ders_2.Main2Activity">
+
+    <Button
+        android:text="SARI"
+        android:layout_width="100dp"
+        android:id="@+id/buttonsari"
+        android:layout_alignTop="@+id/buttonmavi"
+        android:layout_centerHorizontal="true"
+        android:layout_height="75dp"
+        android:textSize="15sp"
+        android:textColor="#FFFF00" />
+
+    <Button
+        android:text="İTALİK"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/buttonkalin"
+        android:layout_alignLeft="@+id/buttonsari"
+        android:layout_alignStart="@+id/buttonsari"
+        android:id="@+id/buttonitalik"
+        android:textSize="15sp" />
+
+    <Button
+        android:text="NORMAL"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/buttonitalik"
+        android:layout_alignLeft="@+id/buttonyesil"
+        android:layout_alignStart="@+id/buttonyesil"
+        android:id="@+id/buttonnormal"
+        android:textSize="15sp" />
+
+    <Button
+        android:text="KALIN"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="11dp"
+        android:id="@+id/buttonkalin"
+        android:layout_below="@+id/buttonmavi"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="15sp" />
+
+    <Button
+        android:text="-"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/buttonbuyut"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/buttonkucult"
+        android:textSize="15sp"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="+"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:id="@+id/buttonbuyut"
+        android:layout_below="@+id/buttonitalik"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="15sp" />
+
+    <Button
+        android:text="YEŞİL"
+        android:layout_width="100dp"
+        android:id="@+id/buttonyesil"
+        android:layout_height="75dp"
+        android:textSize="15sp"
+        android:textColor="#00FF00"
+        android:layout_alignBaseline="@+id/buttonsari"
+        android:layout_alignBottom="@+id/buttonsari"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="MAVİ"
+        android:layout_marginTop="21dp"
+        android:id="@+id/buttonmavi"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:textColor="#0000FF"
+        android:textSize="15sp"
+        android:layout_below="@+id/scrolView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/scrolView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:text="Metin"
+            android:layout_width="match_parent"
+            android:id="@+id/textViewmetin"
+            android:layout_height="200dp"
+            android:textSize="15sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </ScrollView>
+
+</RelativeLayout>
